@@ -11,7 +11,11 @@ export class ProductListComponent {
   products = products;
 
   share() {
-    window.alert('The product has been shared!');
+    window.alert('Bravo !! Le produit a été partagé :-)');
+  }
+
+    onNotify() {
+    window.alert('Notification enregistrée');
   }
 }
 
