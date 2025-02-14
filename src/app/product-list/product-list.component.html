@@ -1,6 +1,6 @@
 <h2>Produits</h2>
 
-<div *ngFor="let product of products">
+<div>@for (product of products; track product.name) {
   <h3>
     <button (click)="share()">Partager</button>
 
@@ -11,8 +11,8 @@
      </a> 
     </h3>
 
-    <p *ngIf="product.description"> Description : {{product.description}} </p> 
-
+    <p> @if (product.description) { Description : {{product.description}} } </p> 
+  }
 </div>
 
 

@@ -1,7 +1,11 @@
 import { Component } from '@angular/core';
+import { TopBarComponent } from './top-bar/top-bar.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ProductListComponent } from './product-list/product-list.component'
 
 @Component({
   selector: 'app-root',
+  imports: [TopBarComponent, ProductListComponent],
   templateUrl: './app.component.html',
   styleUrls: [ './app.component.css' ]
 })

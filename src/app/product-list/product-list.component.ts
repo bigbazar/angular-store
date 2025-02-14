@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import { ProductAlertsComponent } from '../product-alerts/product-alerts.component';
 
 import { products } from '../products';
 
+
 @Component({
   selector: 'app-product-list',
+  imports: [ProductAlertsComponent],
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
